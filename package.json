@@ -1,6 +1,6 @@
 {
   "name": "stoic-quotes",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A selection of timeless quotes from the stoic heavyweights",
   "main": "index.js",
   "scripts": {
