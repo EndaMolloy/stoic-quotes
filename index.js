@@ -5,7 +5,10 @@ module.exports = function(author) {
     return quotes[Math.floor(Math.random() * quotes.length)];
   else{
 
-    const chosenAuthor = (author=='Marcus') ? 'Marcus Aurelius' : author;
+    const trimAuthor = author.trim();
+    const formattedAuthor = trimAuthor.charAt(0).toUpperCase() + trimAuthor.slice(1);
+
+    const chosenAuthor = (formattedAuthor=='Marcus') ? 'Marcus Aurelius' : formattedAuthor;
     const chosenAuthorArr = quotes.filter(quote => quote.author == chosenAuthor);
     return chosenAuthorArr[Math.floor(Math.random() * chosenAuthorArr.length)]
   }

@@ -4,7 +4,11 @@
   "description": "A selection of timeless quotes from the stoic heavyweights",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EndaMolloy/stoic-quotes.git"
   },
   "keywords": [
     "stoicisim",
@@ -12,5 +16,9 @@
     "stoic"
   ],
   "author": "endaM",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0"
+  }
 }
